@@ -1,4 +1,4 @@
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import { Product } from '../../models/Product';
 import ShopItem from './ShopItem.jsx';
 
@@ -15,5 +15,5 @@ export default function ListView(props) {
 }
 
 ListView.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.instanceOf(Product))
+  items: PropTypes.arrayOf(PropTypes.instanceOf(Product)).isRequired,
 };

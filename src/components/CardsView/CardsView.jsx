@@ -1,4 +1,4 @@
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import { Product } from '../../models/Product';
 import ShopCard from './ShopCard.jsx';
 
@@ -15,5 +15,5 @@ export default function CardsView(props) {
 }
 
 CardsView.propTypes = {
-  cards: PropTypes.arrayOf(PropTypes.instanceOf(Product))
+  cards: PropTypes.arrayOf(PropTypes.instanceOf(Product)).isRequired,
 };

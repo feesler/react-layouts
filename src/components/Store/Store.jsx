@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+import { Product } from '../../models/Product.js';
 import IconSwitch from '../IconSwitch/IconSwitch.jsx';
 import CardsView from '../CardsView/CardsView.jsx';
 import ListView from '../ListView/ListView.jsx';
@@ -30,3 +32,7 @@ export default function Store(props) {
     </div>
   );
 }
+
+Store.propTypes = {
+  products: PropTypes.arrayOf(PropTypes.instanceOf(Product)).isRequired,
+};

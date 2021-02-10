@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 export default function IconSwitch(props) {
   const { icon, onSwitch } = props;
@@ -9,3 +9,8 @@ export default function IconSwitch(props) {
     </button>
   )
 }
+
+IconSwitch.propTypes = {
+  icon: PropTypes.string.isRequired,
+  onSwitch: PropTypes.func.isRequired,
+};

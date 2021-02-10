@@ -1,4 +1,4 @@
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import { Product } from '../../models/Product';
 
 export default function ShopCard(props) {
@@ -21,5 +21,5 @@ export default function ShopCard(props) {
 }
 
 ShopCard.propTypes = {
-  card: PropTypes.instanceOf(Product)
+  card: PropTypes.instanceOf(Product).isRequired,
 };
