@@ -103,6 +103,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-content: space-between;
+  overflow-x: auto;
 }
 
 .shop-item {
